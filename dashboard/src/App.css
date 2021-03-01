@@ -1,0 +1,162 @@
+.App {
+  text-align: center;
+  
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+/* Dasboard */
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-box-front {
+  background: rgb(217,219,219);
+background: linear-gradient(0deg, rgba(217,219,219,1) 0%, rgba(255,255,255,1) 100%);
+  color: #F9A825;
+}
+
+/* Style the back side */
+.flip-box-back {
+  background: rgb(252,186,0);
+background: linear-gradient(0deg, rgba(252,186,0,0.969625350140056) 0%, rgba(255,255,255,1) 100%);
+  color: white;
+  transform: rotateY(180deg);
+  align-items: center;
+}
+
+.row {
+  width: 100%;
+  margin: 40px;
+}
+
+/* body{
+  background-image: url("cover2.jpg"); ;
+  opacity:1;
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+form{
+  background-color: #f2f2f2;
+  padding: 50px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+
+
+
+
+/* side barrrrrrrrrrrrrrrrrrr */
+/* .navbar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.navbar Link {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.navbar Link:hover {
+  color: #f1f1f1;
+}
+
+.navbar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+span{
+  font-size:30px;
+  cursor:pointer;
+}
+
+@media screen and (max-height: 450px) {
+  .navbar {padding-top: 15px;}
+  .navbar Link {font-size: 18px;}
+}
+
+ */
+
+

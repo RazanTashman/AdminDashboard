@@ -1,0 +1,37 @@
+
+body {
+  margin: 0;
+}
+
+.FORM {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 20%;
+}
+
+.butt {
+  width: 90%;
+}
+
+.buttAdd{
+    margin-top: 8%;
+    float:right;
+
+    /* margin-right: 0%;  */
+   height:40px;
+     width: 150px; 
+}
+/* 1. Apply different style on the mobile app
+   2. Preventind the non-supported browser for @media query from applying specific styles */
+@media only screen and (min-width: 950px) {
+  .FORM {
+    width: 500px;
+    margin-left: 30%;
+    margin-top: 8%;
+  }
+  .buttAdd{
+    margin-top: 2.5%;
+   
+}
+
+}

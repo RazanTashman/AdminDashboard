@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
+
+
+
+    h1,h2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family:"Nunito Sans";
+    }
+
+    .btnNF {
+        border: 2px solid #183479; 
+	    border-radius: 25px;
+        color: #183479;
+        background-color: #f1f1f1;
+        top: 50%;
+        left: 38%;
+        position: relative;
+        width: 200px;
+        height: 45px;
+        padding: 0;
+        cursor: pointer;
+    }
+    .btnNF:hover{
+        color: #FFFFFF;
+        background-color: #183479;
+    }
+    form{
+        background-color: #f2f2f2;
+        padding: 40px 20px 15px 20px;
+        border: 1px solid lightgrey;
+        border-radius: 3px;
+      }
+
+      
+      .FORM {
+        width: 90%;
+        /* margin-right: 5%; */
+        margin-top: 20%;
+      }
+      
+      .logo{
+          position: relative;
+        margin-top:-20px;
+        width:90px;
+        height:90px;
+         /* top: 50%; */
+         left:38%;
+      }
+      @media only screen and (min-width: 450px) {
+        .FORM {
+          width: 500px;
+          /* margin-left: 30%; */
+          margin-top: 8%;
+        }
+    }
